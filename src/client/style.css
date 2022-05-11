@@ -1,0 +1,12 @@
+.container {
+    border: 2px solid red;
+}
+
+.card {
+    shape-margin: 10em;
+}
+
+.main {
+    padding: 20px;
+    background-color: red;
+}

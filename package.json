@@ -1,0 +1,46 @@
+{
+  "name": "webpack-starter",
+  "version": "1.0.0",
+  "description": "#new project",
+  "main": "index.js",
+  "scripts": {
+    "client": "webpack serve --config webpack/webpack.dev.config.js",
+    "server": "nodemon src/server/index.js",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "build-dev": "webpack --config webpack/webpack.dev.config.js",
+    "build-prod": "webpack --config webpack/webpack.prod.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hero": "heroku git:remote -a frozen-crag-26136"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pramoddivekar31/webpack-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pramoddivekar31/webpack-starter/issues"
+  },
+  "homepage": "https://github.com/pramoddivekar31/webpack-starter#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "heroku": "^7.60.2",
+    "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.16",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "typescript": "^4.6.4",
+    "uuid": "^8.3.2"
+  }
+}
