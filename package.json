@@ -7,8 +7,7 @@
     "client": "webpack serve --config webpack/webpack.dev.config.js",
     "server": "nodemon src/server/index.js",
     "start": "npm run client",
-    "build-dev": "webpack --config webpack/webpack.dev.config.js",
-    "build-prod": "webpack --config webpack/webpack.prod.config.js",
+    "build": "webpack --config webpack/webpack.dev.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "hero": "heroku git:remote -a frozen-crag-26136"
   },
