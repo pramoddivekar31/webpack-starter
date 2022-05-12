@@ -44,8 +44,8 @@ module.exports = {
             directory: path.resolve(__dirname, '..', 'dist')
         },
         open: true,
-        proxy: {
-            '/': 'http://localhost:4000',
-        },
+        // proxy: {
+        //     '/': 'http://localhost:4000',
+        // },
     }
 }
