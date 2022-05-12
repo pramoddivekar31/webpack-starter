@@ -4,6 +4,7 @@
   "description": "#new project",
   "main": "index.js",
   "scripts": {
+    "heroku-prebuild": "npm install --dev",
     "client": "webpack serve --config webpack/webpack.dev.config.js",
     "server": "nodemon src/server/index.js",
     "start": "npm run client",
