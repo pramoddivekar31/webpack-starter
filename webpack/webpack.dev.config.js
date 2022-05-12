@@ -5,9 +5,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     mode: 'development',
     resolve: { extensions: [ '.js', '.ts' ] },
-    entry: path.resolve(__dirname, '..', 'src/client/index.js'),
+    entry: path.resolve(__dirname, '..', './src/client/index.js'),
     output:{
-        path: path.resolve(__dirname, '..' ,'dist'),
+        path: path.resolve(__dirname, '..' ,'./dist'),
         filename: '[name].[contenthash].js'
     },
     module: {
@@ -30,7 +30,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, '..', 'public/index.html')
+            template: path.resolve(__dirname, '..', './public/index.html')
         }),
         new webpack.ProvidePlugin({
             React: 'react'
